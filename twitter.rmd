@@ -1,0 +1,47 @@
+https://mkearney.github.io/nicar_tworkshop/#12
+
+Install
+
+Install {rtweet} CRAN.
+install.packages("rtweet")
+Or install the development version from Github.
+devtools::install_github("mkearney/rtweet")
+Load {rtweet}
+library(rtweet)
+
+Application Program Interfaces (APIs) are sets of protocols that govern interactions between sites and users.
+
+APIs are similar to web browsers but with different purpose:
+
+Web browsers render content
+Web APIs manage and organize data
+For public APIs, many sites only allow authorized users
+
+Twitter, Facebook, Instagram, Github, etc.
+
+Twitter APIs
+
+To connect to Twitter's APIs, users need a consumer key and consumer secret, which you can get by creating a Twitter app.
+
+View the built-in vignette auth for instructions on obtaining and storing user access tokens.*
+
+## view rtweet's authorization vignette
+vignette("auth", package = "rtweet")
+Or look up the vignette online: rtweet.info/articles/auth.html
+
+* For a while, rtweet users were not required to create their own Twitter applications. That recently changed, but hopefully it's resolved soon.
+
+
+3. Complete the fields (important: Callback URL must be exact)
+
+Name: {{initials}}_twitter_app
+Description: {{something about analyzing Twitter data}}
+Website: https://twitter.com/{{you_screen_name}}
+Callback URL: http://127.0.0.1:1410
+
+
+4. Store name of app as app_name in R script
+
+## name of twitter app
+app_name <- "mwk_twitter_app"
+11 / 47
